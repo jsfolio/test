@@ -31,9 +31,7 @@ a#top_btn{
 }
 #wrap{
     width:100%;
-    
 }
-
 /* ------------------------------------- */
 header{
     text-align: center;
@@ -274,7 +272,6 @@ header .search_lnb .header_slide ul li img{
 }
 .hd_btn_wrap{
     position: absolute;
-  
     top:0;
     right:0;
 }
@@ -304,12 +301,6 @@ header .lnb >.lnb_wrap > ul > li{
     z-index: 2;
 }
 
-header .lnb  li:hover > .inner_menu,
-header .lnb  li:hover > .show_all,
-.ham_icon:hover  .show_all{
-    display: block;
-    height: auto;
-}
 header .lnb >.lnb_wrap > ul > li > a{
     display: block;
     font-size:14px;
@@ -351,12 +342,10 @@ header .lnb .lnb_wrap > ul > li > a:hover span:after{
     display: none;
     top:100%;
     left:0;
-    width:100%;
-    max-width:1200px;
     padding:20px 0 30px 0;
     background:#fff;
     border: 1px solid #ccc;
-    z-index: 999;
+    z-index: 5;
     box-sizing: border-box;
 }
 .scroll_menu .show_all{
@@ -371,7 +360,7 @@ header .lnb .lnb_wrap > ul > li > a:hover span:after{
 }
 
 .show_all > li > a{
-     color:#333;
+    color:#333;
     display: block;
     position: relative;
     font-size: 15px;
@@ -407,6 +396,15 @@ header .lnb .lnb_wrap > ul > li > a:hover span:after{
 }
 .inner_menu li a{
     display: block;
+}
+header .lnb li:hover > .inner_menu,
+header .lnb .black:hover .show_all,
+.ham_icon:hover .show_all{
+    display: block;
+    height: auto;
+}
+header .lnb .black:hover .show_all{
+    width:1000%;
 }
 /* ---------------------------------------------- */
 
@@ -467,7 +465,7 @@ section {
     position: absolute;
     width:100px;
     height:100%;
-    z-index: 2;
+    z-index: 1;
     font-size:100px;
     cursor: pointer;
 
@@ -824,17 +822,17 @@ section {
 }
 .pop_price{
     font-size: 20px;
+    color:#000 !important;
     font-weight: bold;
     padding:10px 8px 10px;
 }
-.pop_content input{
+.pop_content .purchase{
+    display: inline-block;
     width:80%;
-    height:30px;
+    padding:8px 0 8px;
     background:navy;
     color:#fff;
     border:none;
-    cursor: pointer;
-
 }
 /* ---------------sec6-------------- */
 #sec6 ul{
@@ -843,19 +841,14 @@ section {
 #sec6 ul li{
     width:calc((100% /3));
     float: left;
-
 }
-
-
 #sec6 ul li:nth-child(2){
     margin:0 auto;
 }
 /* ------------------------------------- */
 footer {
-
     width: 100%;
     background: #fff;
-
     transition: all 0.5s;
 }
 
@@ -900,7 +893,6 @@ footer .f_btm ul li{
 }
 footer .f_btm ul li:first-child{
     width:20%;
-
 }
 footer .f_btm ul li:nth-child(2){
     width:50%;

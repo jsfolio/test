@@ -32,9 +32,6 @@
 
 .mobile_tab header{
     width:100%;
-    /* height:50px; */
-    /* position: fixed;
-    top:0; */
     line-height: 50px;
 }
 .mobile_tab header .logo_wrap h1{
@@ -161,10 +158,9 @@
 .m_category2 ul{
     border:1px solid #bbb;
 }
-.m_category2 ul li{
-    width:100%;
+.m_category2 ul li a{
+    display: block;
     height: 30px;
-    /* line-height: 30px; */
     padding:5px 8px 5px;
     border-bottom: 1px solid #bbb;
     box-sizing: border-box;
